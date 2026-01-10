@@ -26,33 +26,40 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto mb-2 mb-xl-0 gap-xl-4 gap-1">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Homepage</a>
+                                <a class="nav-link active" aria-current="page" href="index.html" data-i18n="nav.home">Homepage</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    About Us
+                                    aria-expanded="false" data-i18n="nav.about">About Us
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item active" href="#About">About Us</a></li>
-                                    <li><a class="dropdown-item" href="#Trainers">Trainers</a></li>
+                                    <li><a class="dropdown-item active" href="#About" data-i18n="about.title">About Us</a></li>
+                                    <li><a class="dropdown-item" href="#Trainers" data-i18n="nav.trainers">Trainers</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#program">Program</a>
-                            </li>
+                                <a class="nav-link" href="#program" data-i18n="nav.program">Program</a>
+                            </li> 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Pricing & FAQ
+                                    aria-expanded="false" data-i18n="nav.pricing">Pricing & FAQ
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#Pricing">Pricing Plan</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
+                                    <li><a class="dropdown-item" href="#Pricing" data-i18n="pricing.plan">Pricing Plan</a></li>
+                                    <li><a class="dropdown-item" href="faq.html" data-i18n="nav.faq">FAQs</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact Us</a>
+                                <a class="nav-link" href="#contact" data-i18n="nav.contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span id="current-lang">EN</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langDropdown">
+                                    <li><button class="dropdown-item lang-select" data-lang="en">English</button></li>
+                                    <li><button class="dropdown-item lang-select" data-lang="fr">Français</button></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -73,15 +80,15 @@
                         <div class="d-flex flex-column gap-4 py-5 text-white" style="max-width: 767px;">
                             <div class="d-flex flex-row align-items-center gap-3">
                                 <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
-                                <h6 class="font-1 accent-color m-0">FORGE YOUR FIGHT</h6>
+                                <h6 class="font-1 accent-color m-0" data-i18n="banner.subtitle">FORGE YOUR FIGHT</h6>
                             </div>
-                            <h1 class="fw-bold">WE BUILD <span class="accent-color">REAL FIGHTERS</span> NOT JUST FITNESS.
+                            <h1 class="fw-bold" data-i18n="banner.h1">WE BUILD <span class="accent-color">REAL FIGHTERS</span> NOT JUST FITNESS.
                             </h1>
-                            <p class="text-white">
+                            <p class="text-white" data-i18n="banner.p">
                                 Elite MMA training for all levels. From striking and grappling to strength and conditioning, Borz MMA Club sharpens skill, discipline, and confidence inside and outside the cage.
                             </p>
                             <!-- <div class="d-flex flex-xl-row flex-column align-items-center gap-4">
-                                <a href="contact.html" class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3">
+                                <a href="contact.html" class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" data-i18n="header.contact_btn">
                                     Contact Us
                                 </a>
                                 <a href="contact.html"
@@ -144,8 +151,8 @@
                     <div class="col mb-3">
                         <div class="card h-100 rounded-0 px-4 py-5 bg-accent">
                             <div class="d-flex flex-column gap-2">
-                                <h4 class="accent-color">Pro Equipment</h4>
-                                <p class="text-color-2">Top-tier equipment for both MMA and bodybuilding. From cages, mats, and bags to free weights and machines, our gym is fully equipped for strength, power, and combat performance.
+                                <h4 class="accent-color" data-i18n="cards.equipment.title">Pro Equipment</h4>
+                                <p class="text-color-2" data-i18n="cards.equipment.p">Top-tier equipment for both MMA and bodybuilding. From cages, mats, and bags to free weights and machines, our gym is fully equipped for strength, power, and combat performance.
                                 </p>
                             </div>
                             <div class="d-flex justify-content-end">
@@ -156,8 +163,8 @@
                     <div class="col mb-3 bg-accent">
                         <div class="card h-100 rounded-0 px-4 py-5 bg-accent">
                             <div class="d-flex flex-column gap-2">
-                                <h4 class="accent-color">Expert Trainers</h4>
-                                <p class="text-color-2">Train with experienced Chechen coaches, professional fighters, and certified strength trainers. Whether your goal is competition, muscle growth, or total fitness, our coaches guide you with discipline and precision.
+                                <h4 class="accent-color" data-i18n="cards.trainers.title">Expert Trainers</h4>
+                                <p class="text-color-2" data-i18n="cards.trainers.p">Train with experienced Chechen coaches, professional fighters, and certified strength trainers. Whether your goal is competition, muscle growth, or total fitness, our coaches guide you with discipline and precision.
                                 </p>
                             </div>
                             <div class="d-flex justify-content-end">
@@ -168,8 +175,8 @@
                     <div class="col mb-3 accent">
                         <div class="card h-100 rounded-0 px-4 py-5 bg-accent">
                             <div class="d-flex flex-column gap-2">
-                                <h4 class="accent-color">HEALTH, PERFORMANCE</h4>
-                                <p class="text-color-2">Smart training, recovery, and conditioning for fighters and lifters alike. We focus on strength, endurance, mobility, and long-term health to keep your body performing at its best.
+                                <h4 class="accent-color" data-i18n="cards.health.title">HEALTH, PERFORMANCE</h4>
+                                <p class="text-color-2" data-i18n="cards.health.p">Smart training, recovery, and conditioning for fighters and lifters alike. We focus on strength, endurance, mobility, and long-term health to keep your body performing at its best.
                                 </p>
                             </div>
                             <div class="d-flex justify-content-end">
@@ -191,14 +198,14 @@
                             <div
                                 class="d-flex flex-column position-absolute top-0 start-0 bg-accent-color accent-primary mt-xl-5 px-5 py-2">
                                 <h1>10+</h1>
-                                <p class="accent-primary">Training Programs</p>
+                                <p class="accent-primary" data-i18n="about.training_programs">Training Programs</p>
                             </div>
                             <div class="bg-trapesium position-absolute bottom-0 start-0 ms-xl-5 accent-primary">
                                 <div class="trapesium-content">
                                     <div class="d-flex flex-row gap-2 align-items-center">
                                         <i class="rtmicon rtmicon-classic-phone" style="font-size: 60px;"></i>
                                         <div class="d-flex flex-column">
-                                            <h4>Call Us Anytime</h4>
+                                            <h4 data-i18n="about.call_us">Call Us Anytime</h4>
                                             <h6 class="fst-italic m-0">+212 676202033</h6>
                                         </div>
                                     </div>
@@ -211,11 +218,11 @@
                         <div class="d-flex flex-column gap-4">
                             <div class="d-flex flex-row align-items-center gap-3">
                                 <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
-                                <h6 class="font-1 accent-color m-0">About Us</h6>
+                                <h6 class="font-1 accent-color m-0" data-i18n="about.title">About Us</h6>
                             </div>
-                            <h3 class="fw-bold">BUILT FOR FIGHTERS <span class="accent-color">BUILT FOR STRENGTH</span>
+                            <h3 class="fw-bold" data-i18n="about.h3">BUILT FOR FIGHTERS <span class="accent-color" data-i18n="about.h3.accent">BUILT FOR STRENGTH</span>
                             </h3>
-                            <p>
+                            <p data-i18n="about.p">
                                 Borz MMA Club is more than a fight gym. We are a complete training facility for MMA athletes, bodybuilders, and anyone serious about physical performance. Our environment is built on discipline, respect, and results.
 
 With 10+ specialized training programs, we combine combat sports, strength training, and conditioning under one roof. Whether your goal is stepping into the cage, building muscle, or improving overall fitness, Borz is where hard work becomes progress.
@@ -223,23 +230,23 @@ With 10+ specialized training programs, we combine combat sports, strength train
                             <div class="d-flex flex-column gap-2 font-2">
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="rtmicon rtmicon-check-circle accent-color"></i>
-                                    <span>MMA, grappling, boxing, kickboxing, and BJJ training.</span>
+                                    <span data-i18n="about.features.combat">MMA, grappling, boxing, kickboxing, and BJJ training.</span>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="rtmicon rtmicon-check-circle accent-color"></i>
-                                    <span>Full bodybuilding and strength training programs.</span>
+                                    <span data-i18n="about.features.full_body">Full bodybuilding and strength training programs.</span>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="rtmicon rtmicon-check-circle accent-color"></i>
-                                    <span>Experienced Chechen coaches and professional athletes.</span>
+                                    <span data-i18n="about.features.experienced">Experienced Chechen coaches and professional athletes.</span>
                                 </div>
                                 <div class="d-flex flex-row gap-3 align-items-center">
                                     <i class="rtmicon rtmicon-check-circle accent-color"></i>
-                                    <span>Programs for beginners, advanced athletes, and competitors.</span>
+                                    <span data-i18n="about.features.for_who">Programs for beginners, advanced athletes, and competitors.</span>
                                 </div>
                             </div>
                             <div class="w-max-content">
-                                <a href="https://www.instagram.com/borz_mma_club/" class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" target="_blank">
+                                <a href="https://www.instagram.com/borz_mma_club/" class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" target="_blank" data-i18n="about.learn_more">
                                     Learn More
                                 </a>
                             </div>
@@ -258,16 +265,16 @@ With 10+ specialized training programs, we combine combat sports, strength train
                             <div class="d-flex flex-row align-items-center gap-3">
                                 <div class="border-accent-program" style="width: 35px;">
                                 </div>
-                                <h6 class="font-1 m-0">Our Program</h6>
+                                <h6 class="font-1 m-0" data-i18n="programs.title">Our Program</h6>
                             </div>
-                            <h3 class="fw-bold">BUILD YOUR BODY<span> SHARPEN YOUR SKILLS.</span></h3>
-                            <p class="program-text">
+                            <h3 class="fw-bold" data-i18n="programs.h3">BUILD YOUR BODY<span> SHARPEN YOUR SKILLS.</span></h3>
+                            <p class="program-text" data-i18n="programs.p">
                                 We create structured training programs for MMA, combat sports, and bodybuilding.
 Whether you’re a beginner or an experienced athlete, our system helps you build strength, technique, and confidence.
                             </p>
                             <div class="w-max-content">
                                 <a href="#contact"
-                                    class="btn btn-black-outline rounded-0 d-flex flex-row gap-2 px-5 py-3">
+                                    class="btn btn-black-outline rounded-0 d-flex flex-row gap-2 px-5 py-3" data-i18n="programs.contact">
                                     Contact
                                 </a>
                             </div>
@@ -283,8 +290,8 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                                         <div
                                             class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
                                             <div class="text-white" style="z-index: 2; max-width: 467px;">
-                                                <h4 class="font-1">Basic Exercise</h4>
-                                                <p>Build strength, fitness, and movement fundamentals with structured beginner programs.</p>
+                                                <h4 class="font-1" data-i18n="programs.basic.title">Basic Exercise</h4>
+                                                <p data-i18n="programs.basic.p">Build strength, fitness, and movement fundamentals with structured beginner programs.</p>
                                                 
                                                 </div>
                                         </div>
@@ -297,8 +304,8 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                                         <div
                                             class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
                                             <div class="text-white" style="z-index: 2; max-width: 467px;">
-                                                <h4 class="font-1">Advanced Exercises</h4>
-                                                <p>High-intensity training focused on performance, technique, and progression.</p>
+                                                <h4 class="font-1" data-i18n="programs.advanced.title">Advanced Exercises</h4>
+                                                <p data-i18n="programs.advanced.p">High-intensity training focused on performance, technique, and progression.</p>
                                                 
                                                 </div>
                                         </div>
@@ -311,8 +318,8 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                                         <div
                                             class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
                                             <div class="text-white" style="z-index: 2; max-width: 467px;">
-                                                <h4 class="font-1">MMA</h4>
-                                                <p>Complete MMA training including striking, grappling, and fight conditioning.</p>
+                                                <h4 class="font-1" data-i18n="programs.mma.title">MMA</h4>
+                                                <p data-i18n="programs.mma.p">Complete MMA training including striking, grappling, and fight conditioning.</p>
                                                 
                                                 </div>
                                         </div>
@@ -325,8 +332,8 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                                         <div
                                             class="position-absolute d-flex flex-column gap-2 h-100 w-100 text-white justify-content-end p-4">
                                             <div class="text-white" style="z-index: 2; max-width: 467px;">
-                                                <h4 class="font-1">BODYBUILDING</h4>
-                                                <p>Muscle-building and strength programs using professional equipment.</p>
+                                                <h4 class="font-1" data-i18n="programs.bodybuilding.title">BODYBUILDING</h4>
+                                                <p data-i18n="programs.bodybuilding.p">Muscle-building and strength programs using professional equipment.</p>
                                                 
                                                 </div>
                                         </div>
@@ -348,11 +355,11 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                     <div class="d-flex flex-column gap-3 text-center align-items-center" style="max-width: 767px;">
                         <div class="d-flex flex-row align-items-center gap-3">
                             <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
-                            <h6 class="font-1 accent-color m-0">Trainers</h6>
+                            <h6 class="font-1 accent-color m-0" data-i18n="trainers.title">Trainers</h6>
                             <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
                         </div>
-                        <h3 class="fw-bold">Team Of <span class="accent-color">Expert</span> Coaches.</h3>
-                        <p>
+                        <h3 class="fw-bold" data-i18n="trainers.h3">Team Of <span class="accent-color">Expert</span> Coaches.</h3>
+                        <p data-i18n="trainers.p">
                             Our coaching team brings decades of experience in combat sports and physical preparation. From champions to dedicated mentors, each coach at Borz MMA Club is committed to developing skill, strength, and discipline.
                         </p>
                     </div>
@@ -379,8 +386,8 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                                 </div>
                                 <div class="d-flex flex-column gap-1">
                                     <h4>KHUSHPAROV ISMAIL OUMAROVITCH</h4>
-                                    <p class="accent-color"><b>Head Wrestling Coach </b><br>
-                                    Lutte libre specialist and 6-time wrestling champion in France. With over 20 years of coaching experience, Ismail focuses on elite grappling fundamentals, control, and competition-level performance.</p>
+                                    <p class="accent-color"><b>Head Wrestling Coach </b><br></p>
+                                    <p data-i18n="trainers.ismail.bio">Lutte libre specialist and 6-time wrestling champion in France. With over 20 years of coaching experience, Ismail focuses on elite grappling fundamentals, control, and competition-level performance.</p>
                                 </div>
                             </div>
                         </div>
@@ -408,7 +415,7 @@ Whether you’re a beginner or an experienced athlete, our system helps you buil
                                     <h4>KHATOUEV IMRAN ARBIEVITCH</h4>
                                     <p class="accent-color"><b>Grappling & BJJ Coach </b><br>
 
-Expert in Lutte, BJJ, and Grappling, with a strong background in physical preparation. Bringing 10 years of coaching experience, Imran develops strength, endurance, and technical efficiency for all levels.</p>
+                                    <span data-i18n="trainers.imran.bio">Expert in Lutte, BJJ, and Grappling, with a strong background in physical preparation. Bringing 10 years of coaching experience, Imran develops strength, endurance, and technical efficiency for all levels.</span></p>
                                 </div>
                             </div>
                         </div>
@@ -434,9 +441,9 @@ Expert in Lutte, BJJ, and Grappling, with a strong background in physical prepar
                                 </div>
                                 <div class="d-flex flex-column gap-1">
                                     <h4>ORZOUMIEV KHARON OUSMANOVITCH</h4>
-                                    <p class="accent-color"><b>MMA & Striking Coach</b><br>
+                                    <p class="accent-color"><b>MMA & Striking Coach</b><br></p>
 
-Specialist in MMA, boxing, grappling, and kickboxing. With 13 years of coaching experience, Kharon builds complete fighters through smart striking, cage control, and fight conditioning.</p>
+                                    <p data-i18n="trainers.kharon.bio">Specialist in MMA, boxing, grappling, and kickboxing. With 13 years of coaching experience, Kharon builds complete fighters through smart striking, cage control, and fight conditioning.</p>
                                 </div>
                             </div>
                         </div>
@@ -505,10 +512,10 @@ Specialist in MMA, boxing, grappling, and kickboxing. With 13 years of coaching 
                         <div class="d-flex flex-column gap-3" style="max-width: 467px;">
                             <div class="d-flex flex-row align-items-center gap-3">
                                 <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
-                                <h6 class="font-1 accent-color m-0">Testimonials</h6>
+                                <h6 class="font-1 accent-color m-0" data-i18n="testimonials.title">Testimonials</h6>
                                 <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
                             </div>
-                            <h3 class="fw-bold">What They Say <span class="accent-color">About Us.</span></h3>
+                            <h3 class="fw-bold" data-i18n="testimonials.h3">What They Say <span class="accent-color">About Us.</span></h3>
                         </div>
                     </div>
                     <div class="col mb-3">
@@ -537,7 +544,7 @@ Specialist in MMA, boxing, grappling, and kickboxing. With 13 years of coaching 
                                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                         </div>
-                                        <span class="font-2 fst-italic">“Their personalized approach and unwavering
+                                        <span class="font-2 fst-italic" data-i18n="testimonials.slide1">“Their personalized approach and unwavering
                                             support have helped me achieve goals I never thought possible. The workouts
                                             are challenging yet enjoyable. I’ve gained not just strength and endurance
                                             but also a renewed confidence in myself.”</span>
@@ -571,7 +578,7 @@ Specialist in MMA, boxing, grappling, and kickboxing. With 13 years of coaching 
                                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                             <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
                                         </div>
-                                        <span class="font-2 fst-italic">“Trés satisfaite d avoir inscrit mes enfants qui y sont tres epanouis
+                                        <span class="font-2 fst-italic" data-i18n="testimonials.slide2">“Trés satisfaite d avoir inscrit mes enfants qui y sont tres epanouis
 Salle trés bien equipée , propre
 Personnel accueillant et bienveillant
 Coach passioné et professionnel
@@ -641,15 +648,15 @@ Je recommande sans hesitation" <br><br></span>
                     style="max-width: 967px;">
                     <div class="d-flex flex-row align-items-center gap-3">
                         <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
-                        <h6 class="font-1 accent-color m-0">Join Now</h6>
+                        <h6 class="font-1 accent-color m-0" data-i18n="cta.title">Join Now</h6>
                         <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
                     </div>
-                    <h3 class="fw-bold">PERSONALIZED TRAINING PLANS <span class="accent-color">TO BUILD</span> STRENGTH AND SKILL</h3>
-                    <p class="text-white" style="max-width: 667px;">
+                    <h3 class="fw-bold" data-i18n="cta.h3">PERSONALIZED TRAINING PLANS <span class="accent-color">TO BUILD</span> STRENGTH AND SKILL</h3>
+                    <p class="text-white" style="max-width: 667px;" data-i18n="cta.p">
                         Train with programs tailored to your goals. Whether you aim to compete in MMA, master combat disciplines, or build muscle and power, our coaches design a plan that fits your body, your level, and your ambition.
                     </p>
                     <div class="w-max-content">
-                        <a href="https://www.instagram.com/borz_mma_club/" class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3">
+                        <a href="https://www.instagram.com/borz_mma_club/" class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" data-i18n="cta.button">
                             Contact Us
                         </a>
                     </div>
@@ -784,7 +791,7 @@ Je recommande sans hesitation" <br><br></span>
                             </div>
                             <div class="d-flex flex-column position-relative pt-4" style="z-index: 2;">
                                 <h1 class="fw-bold accent-color m-0">3<sup></sup></h1>
-                                <h5 class="fs-5">Certified Trainer</h5>
+                                <h5 class="fs-5" data-i18n="counter.certified">Certified Trainer</h5>
                             </div>
                         </div>
                     </div>
@@ -795,7 +802,7 @@ Je recommande sans hesitation" <br><br></span>
                             </div>
                             <div class="d-flex flex-column position-relative pt-4" style="z-index: 2;">
                                 <h1 class="fw-bold accent-color m-0">100<sup>+</sup></h1>
-                                <h5 class="fs-5">Happy Clients</h5>
+                                <h5 class="fs-5" data-i18n="counter.happy">Happy Clients</h5>
                             </div>
                         </div>
                     </div>
@@ -806,7 +813,7 @@ Je recommande sans hesitation" <br><br></span>
                             </div>
                             <div class="d-flex flex-column position-relative pt-4" style="z-index: 2;">
                                 <h1 class="fw-bold accent-color m-0">15<sup>+</sup></h1>
-                                <h5 class="fs-5">Years Experience</h5>
+                                <h5 class="fs-5" data-i18n="counter.years">Years Experience</h5>
                             </div>
                         </div>
                     </div>
@@ -817,7 +824,7 @@ Je recommande sans hesitation" <br><br></span>
                             </div>
                             <div class="d-flex flex-column position-relative pt-4" style="z-index: 2;">
                                 <h1 class="fw-bold accent-color m-0">12<sup>+</sup></h1>
-                                <h5 class="fs-5">Training Programs</h5>
+                                <h5 class="fs-5" data-i18n="counter.programs">Training Programs</h5>
                             </div>
 
                         </div>
@@ -834,11 +841,11 @@ Je recommande sans hesitation" <br><br></span>
                         style="max-width: 767px;">
                         <div class="d-flex flex-row align-items-center gap-3">
                             <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
-                            <h6 class="font-1 accent-color m-0">Our Program</h6>
+                            <h6 class="font-1 accent-color m-0" data-i18n="pricing.title">Our Program</h6>
                             <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
                         </div>
-                        <h3 class="fw-bold">Special For <span class="accent-color">Membership.</span></h3>
-                        <p>
+                        <h3 class="fw-bold" data-i18n="pricing.h3">Special For <span class="accent-color">Membership.</span></h3>
+                        <p data-i18n="pricing.p">
                             Simple and flexible membership plans for MMA, combat sports, and bodybuilding.
 Choose your commitment, train seriously, and achieve real results.
                         </p>
@@ -851,44 +858,44 @@ Choose your commitment, train seriously, and achieve real results.
                                 <div class="d-flex flex-column gap-3 position-relative" style="z-index: 2;">
                                     <div class="d-flex flex-row justify-content-between align-items-center">
                                         <div class="d-flex flex-column gap-3">
-                                            <h5 class="fw-semibold">Standard Plan</h5>
+                                            <h5 class="fw-semibold" data-i18n="pricing.standard.title">Standard Plan</h5>
                                             <div class="d-flex flex-row align-items-end heading mb-3">
                                                 <h3 class="m-0 fw-bold">1,000 DHS</h3>
-                                                <span class="fw-semibold">/MONTH</span>
+                                                <span class="fw-semibold" data-i18n="pricing.per_month">/MONTH</span>
                                             </div>
                                         </div>
                                     </div>
                                     <hr class="border-accent-color-linear m-0" style="opacity: 100%;">
-                                    <span>No commitment. Total freedom. <br> <b>Includes:</b></span>
+                                    <span data-i18n="pricing.standard.header">No commitment. Total freedom. <br> <b>Includes:</b></span>
                                     <div class="d-flex flex-column gap-2">
                                         <div class="d-flex flex-row gap-3 align-items-cente">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Full access to MMA & bodybuilding
+                                            <span data-i18n="pricing.standard.includes.full_access">Full access to MMA & bodybuilding</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Vivamus sit amet erat turpis.
+                                            <span data-i18n="pricing.standard.includes.feature2">Vivamus sit amet erat turpis.</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            BJJ, grappling, boxing, kickboxing, MMA
+                                            <span data-i18n="pricing.standard.includes.combat">BJJ, grappling, boxing, kickboxing, MMA</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Fully equipped bodybuilding area
+                                            <span data-i18n="pricing.standard.includes.bodybuilding">Fully equipped bodybuilding area</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Professional coaching
+                                            <span data-i18n="pricing.standard.includes.coaching">Professional coaching</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Unlimited access based on schedule
+                                            <span data-i18n="pricing.standard.includes.unlimited">Unlimited access based on schedule</span>
                                         </div>
-                                    </div>
+                                    </div> 
                                     <div class="w-100">
                                         <a href="https://www.instagram.com/borz_mma_club/"
-                                            class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" target="_blank">
+                                            class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" target="_blank" data-i18n="pricing.get_started">
                                             Get Started
                                         </a>
                                     </div>
@@ -902,52 +909,52 @@ Choose your commitment, train seriously, and achieve real results.
                                 <div class="d-flex flex-column gap-3 position-relative" style="z-index: 2;">
                                     <div class="d-flex flex-row justify-content-between align-items-center">
                                         <div class="d-flex flex-column gap-3">
-                                            <h5 class="fw-semibold">Premium Package</h5>
+                                            <h5 class="fw-semibold" data-i18n="pricing.premium.title">Premium Package</h5>
                                             <div class="d-flex flex-row align-items-end heading mb-3">
                                                 <h3 class="m-0 fw-bold">800 DHS</h3>
-                                                <span class="fw-semibold">/MONTH</span>
+                                                <span class="fw-semibold" data-i18n="pricing.per_month">/MONTH</span>
                                             </div>
                                         </div>
                                     </div>
                                     <hr class="border-accent-color-linear m-0" style="opacity: 100%;">
-                                    <span>Advance payment. Best value option. <br><b>Options:</b></span>
+                                    <span data-i18n="pricing.premium.header">Advance payment. Best value option. <br><b>Options:</b></span>
                                     <div class="d-flex flex-column gap-2">
                                         <div class="d-flex flex-row gap-3 align-items-cente">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            <b>3 months: 2,700 DHS : 900 DHS / month (–10%)</b>
+                                            <b><span data-i18n="pricing.premium.options.3months">3 months: 2,700 DHS : 900 DHS / month (–10%)</span></b>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            <b>12 months: 9,600 DHS : 800 DHS / month (–20%)</b>
+                                            <b><span data-i18n="pricing.premium.options.12months">12 months: 9,600 DHS : 800 DHS / month (–20%)</span></b>
                                         </div>
                                     </div>
-                                    <span><b>Includes:</b></span>
+                                    <span data-i18n="pricing.premium.includes_header"><b>Includes:</b></span>
                                     <div class="d-flex flex-column gap-2">
                                         <div class="d-flex flex-row gap-3 align-items-cente">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Full MMA & bodybuilding access
+                                            <span data-i18n="pricing.premium.includes.full_access">Full MMA & bodybuilding access</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            All combat sports classes
+                                            <span data-i18n="pricing.premium.includes.all_classes">All combat sports classes</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Ongoing coaching and guidance
+                                            <span data-i18n="pricing.premium.includes.coaching">Ongoing coaching and guidance</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Serious progression and visible results
+                                            <span data-i18n="pricing.premium.includes.progression">Serious progression and visible results</span>
                                         </div>
                                         <div class="d-flex flex-row gap-3 align-items-center">
                                             <i class="fa-solid fa-circle-check"></i>
-                                            Priority access to selected sessions
+                                            <span data-i18n="pricing.premium.includes.priority">Priority access to selected sessions</span>
                                         </div>
                                     </div>
-                                    <span><b>The longer you commit, the more you save.</b></span>
+                                    <span data-i18n="pricing.premium.savings_text"><b>The longer you commit, the more you save.</b></span>
                                     <div class="w-100">
                                         <a href="https://www.instagram.com/borz_mma_club/"
-                                            class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" target="_blank">
+                                            class="btn btn-accent rounded-0 d-flex flex-row gap-2 px-5 py-3" target="_blank" data-i18n="pricing.get_started">
                                             Get Started
                                         </a>
                                     </div>
@@ -970,7 +977,7 @@ Choose your commitment, train seriously, and achieve real results.
                                 <h6 class="font-1 accent-color m-0">News & Blog</h6>
                                 <div class="border border-1 border-top border-accent-color" style="width: 35px;"></div>
                             </div>
-                            <h3 class="fw-bold">All About <span class="accent-color">Healthy</span> Updates.</h3>
+                            <h3 class="fw-bold" data-i18n="blog.h3">All About <span class="accent-color">Healthy</span> Updates.</h3>
                             <p>
                                 Creating custom workout plans tailored to your unique needs. Whether you're looking to
                                 build
@@ -1194,32 +1201,32 @@ Choose your commitment, train seriously, and achieve real results.
                                 <div class="col-xl-3 mb-3">
                                     <div class="d-flex flex-column">
                                         <div class="pb-2">
-                                            <h5 class="font-1 accent-color">Quick Link</h5>
+                                            <h5 class="font-1 accent-color" data-i18n="footer.quick">Quick Link</h5>
                                             <hr class="border-accent-color-linear" style="opacity: 1;">
                                         </div>
                                         <ul class="list ps-0 gap-2 accent-color">
                                             <li>
-                                                <a href="index.html" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="index.html" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.home">
                                                     Home
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#About" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#About" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.about">
                                                     About Us
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#program" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#program" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.services">
                                                     Services
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#Pricing" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#Pricing" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.pricing_plan">
                                                     Pricing Plan
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#Contact" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#Contact" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.contact_link">
                                                     Contact Us
                                                 </a>
                                             </li>
@@ -1229,37 +1236,37 @@ Choose your commitment, train seriously, and achieve real results.
                                 <div class="col-xl-4 mb-3">
                                     <div class="d-flex flex-column">
                                         <div class="pb-2">
-                                            <h5 class="font-1 accent-color">Programs</h5>
+                                            <h5 class="font-1 accent-color" data-i18n="footer.programs">Programs</h5>
                                             <hr class="border-accent-color-linear" style="opacity: 1;">
                                         </div>
                                         <ul class="list ps-0 gap-2 accent-color">
                                             <li>
-                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.programs.basic">
                                                     Basic Exercise
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.programs.advanced">
                                                     Advanced Exercises
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.programs.bodybuilding">
                                                     Bodybuilding
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.programs.regular">
                                                     Regular Workout
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.programs.stretching">
                                                     Streching Workout
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center">
+                                                <a href="#" class="link d-flex flex-row gap-3 align-items-center" data-i18n="footer.programs.crossfit">
                                                     Crossfit
                                                 </a>
                                             </li>
@@ -1269,28 +1276,28 @@ Choose your commitment, train seriously, and achieve real results.
                                 <div class="col-xl-5 mb-xl-3 mb-0">
                                     <div class="d-flex flex-column gap-3">
                                         <div class="pb-2 w-max-content">
-                                            <h5 class="font-1 accent-color">Contact Us</h5>
+                                            <h5 class="font-1 accent-color" data-i18n="footer.contact">Contact Us</h5>
                                             <hr class="border-accent-color-linear" style="opacity: 1;">
                                         </div>
                                         <div class="d-flex flex-column gap-3">
                                             <div class="d-flex flex-row align-items-center font-2 gap-3">
                                                 <i class="rtmicon rtmicon-location fs-1 accent-color"></i>
                                                 <div class="d-flex flex-column">
-                                                    <h5>Location</h5>
+                                                    <h5 data-i18n="contact.location">Location</h5>
                                                     <span><a href="http://https://www.google.com/maps/place/BORZ+MMA/data=!4m2!3m1!1s0x0:0xa27a1db7a251105?sa=X&ved=1t:2428&ictx=111" style="color: #C5FE00; font-size: 15px;">5 Rue des Asphodeles, Casablanca 20000</a></span>
                                                 </div>
                                             </div>
                                             <div class="d-flex flex-row align-items-center font-2 gap-3">
                                                 <i class="rtmicon rtmicon-envelope fs-1 accent-color"></i>
                                                 <div class="d-flex flex-column">
-                                                    <h5>Email</h5>
+                                                    <h5 data-i18n="contact.email">Email</h5>
                                                     <span><a href="mailto:contact@borz-mma.com" style="color: #C5FE00; font-size: 15px;">contact@borz-mma.com</a></span>
                                                 </div>
                                             </div>
                                             <div class="d-flex flex-row align-items-center font-2 gap-3">
                                                 <i class="rtmicon rtmicon-classic-phone fs-1 accent-color"></i>
                                                 <div class="d-flex flex-column">
-                                                    <h5>Phone</h5>
+                                                    <h5 data-i18n="contact.phone">Phone</h5>
                                                     <span><a href="tel:+212676202033" style="color: #C5FE00; font-size: 15px;">0676-202033</a></span>
                                                 </div>
                                             </div>
@@ -1304,7 +1311,7 @@ Choose your commitment, train seriously, and achieve real results.
                 <hr class="border-accent-color-2 m-0" style="opacity: 1;">
                 <div class="section d-flex flex-xl-row flex-column gap-3 justify-content-center py-3">
                     <span class="text-xl-center accent-color text-center fs-6 font-2">
-                        Copyright © 2025 BORZ MMA. All Rights Reserved.
+                        <span data-i18n="copyright">Copyright © 2025 BORZ MMA. All Rights Reserved.</span>
                     </span>
                 </div>
             </div>
@@ -1321,6 +1328,7 @@ Choose your commitment, train seriously, and achieve real results.
     <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/video_embedded.js"></script>
     <script src="js/vendor/fslightbox.js"></script>
+    <script src="js/i18n.js"></script>
 </body>
 
 </html>
